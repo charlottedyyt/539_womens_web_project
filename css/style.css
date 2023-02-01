@@ -1,6 +1,7 @@
 img{
     width: 50%;
-    border: dashed lightgoldenrodyellow 10px;
+    border: solid yellow 10px;
+    box-shadow: 10px 10px blueviolet;
 }
 h2{
     color: blueviolet;
@@ -8,6 +9,9 @@ h2{
 }
 nav{
     background-color: blueviolet;
+}
+p{
+    line-height: 1.5;
 }
 li{
     color: white;
