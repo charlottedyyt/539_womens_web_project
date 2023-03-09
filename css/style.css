@@ -1,33 +1,143 @@
-img{
-    width: 50%;
-    border: solid yellow 10px;
-    box-shadow: 10px 10px blueviolet;
-}
-h2{
-    color: blueviolet;
-    font-size: x-large;
-}
-nav{
-    background-color: blueviolet;
-}
-p{
+body {
+    /* Set line spacing */
     line-height: 1.5;
 }
-li{
-    color: white;
+
+header,
+nav {
+    /* Set padding and margin */
+    padding: 20px 10px;
+    margin: 10px 20px;
+}
+
+nav ul li {
+    /* Set display, margin, padding, font-size, background-color */
+    background-color: #FEE4C3;
     display: inline-block;
-    margin: 5px;
-    padding: 5px;
+    padding: 10px 20px;
+    margin: auto;
+    font-size: large;
 }
-.active{
-    color: white;
-    border: solid 5px;
+
+nav a {
+    /* Set text decoration*/
+    text-decoration: none;
 }
-.skip{
+
+a:visited {
+    /* Set color */
+    color: black;
+}
+
+img {
+    width: 50%;
+    padding: 3px;
+    display: block;
+    margin: auto;
+    border: solid black 5px;
+    /* box-shadow: 10px 10px blueviolet; */
+}
+
+img:hover {
+    border: solid rgb(146, 13, 13) 5px;
+}
+
+.active {
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration: underline wavy;
+    text-underline-offset: 10px;
+    text-transform: uppercase;
+}
+
+h1 {
+    /*Set font and font size*/
+    font-family: Merriweather, Anton, "Times New Roman", Helvetica;
+    font-size: 3rem;
+}
+
+h2 {
+    /*Set font, font size, and alignment*/
+    font-family: Anton, "Times New Roman", Helvetica;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    /*Set font size*/
+    font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+    /*Set margin */
+    margin: 10px;
+
+}
+
+.grid {
+    /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    border-radius: 20px;
+    justify-content: space-between;
+    grid-row-gap: 10px;
+}
+
+.grid div {
+    /* Set border properties, padding, and background color */
+    border: solid black;
+    background-color: white;
+    padding: 20px;
+}
+
+.grid img {
+    /* Set width, margin, and display */
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.grid div:nth-child(3n+1) {
+    /* Set box shadow */
+    box-shadow: 10px 0px 5px #A7A9A8;
+}
+
+.grid div:nth-child(3n) {
+    /* Set box shadow */
+    box-shadow: -10px 0px 5px #A7A9A8;
+}
+
+.grid div:nth-child(3n+2) {
+    /* Set box shadow */
+    box-shadow: 10px 0px 5px #A7A9A8, -10px 0px 5px #A7A9A8;
+}
+
+p+p {
+    /* Set indentation */
+    text-indent: 20px;
+}
+
+p {
+    /* Set margin */
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.grid ul li {
+    /* Set margin, line-spacing, list styling  */
+    margin: 0px 0px 20px 10px;
+    line-height: 1;
+    list-style: inside;
+}
+
+.skip {
     position: absolute;
     left: -1000px;
 }
 
-.skip:focus{
+.skip:focus {
     left: 0px;
 }
