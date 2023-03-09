@@ -100,19 +100,16 @@ h3 {
     margin: auto;
 }
 
-.grid div:nth-child(3n+1) {
-    /* Set box shadow */
-    box-shadow: 10px 0px 5px #A7A9A8;
+.grid div:nth-child(3n+1) img{
+    border: solid red 5px;
 }
 
-.grid div:nth-child(3n) {
-    /* Set box shadow */
-    box-shadow: -10px 0px 5px #A7A9A8;
+.grid div:nth-child(3n+2) img{
+    border: solid yellow 5px;
 }
 
-.grid div:nth-child(3n+2) {
-    /* Set box shadow */
-    box-shadow: 10px 0px 5px #A7A9A8, -10px 0px 5px #A7A9A8;
+.grid div:nth-child(3n) img{
+    border: solid blue 5px;
 }
 
 p+p {
