@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @keyframes rotate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-body {
-    font-family: 'Noto Sans', sans-serif;
+}
+
+.mainbody {
     background-image: url("../images/backgoundImg.jpg");
     backdrop-filter: blur(40px);
 }
-.indexMain{
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.indexMain {
     border: solid black;
     background-color: rgba(255, 255, 255, 0.575);
     padding: 20px;
@@ -22,7 +27,7 @@ body {
 
 nav {
     display: flex;
-    background-color: #ffffffd1;
+    background-color: #fee5e5;
     padding: 10px;
 }
 
@@ -67,18 +72,22 @@ h1 {
     font-weight: 600;
 }
 
-h2, dt {
+h2,
+dt {
     /*Set font, font size, and alignment*/
     font-size: 2rem;
     text-align: center;
 }
-h3{
+
+h3 {
     font-size: 1.2rem;
 }
-.dicExplain{
+
+.dicExplain {
     padding: 0 10px 10px 10px;
 }
-.grid h3{
+
+.grid h3 {
     /*Set font size*/
     padding: 0 10px;
 }
@@ -105,7 +114,7 @@ h3 {
 .grid div {
     /* Set border properties, padding, and background color */
     border: solid black;
-    background-color: rgba(255, 255, 255, 0.575);;
+    background-color: rgba(255, 255, 255, 0.575);
     padding: 20px;
 }
 
@@ -143,10 +152,11 @@ p {
 }
 
 footer {
-    background-color: #ffffffd1;
+    background-color: #fee5e5;
     color: #000000;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
@@ -160,6 +170,7 @@ footer {
 .skip:focus {
     left: 0px;
 }
+
 .aboutImg {
     display: block;
     width: 90%;
@@ -169,7 +180,8 @@ footer {
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
-dl{
+
+dl {
     width: 90%;
     display: grid;
     grid-template-columns: 100%;
@@ -177,11 +189,33 @@ dl{
     grid-row-gap: 10px;
     margin: auto;
 }
-dl div{
+
+dl div {
     border: solid black;
     background-color: rgba(255, 255, 255, 0.575);
     padding: 20px;
 }
+
+.backbutton{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border: solid black 2px;
+    /* border-radius: 10px; */
+    transition-timing-function: ease-in;
+    margin: 10px;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+.backbutton:hover{
+    background-color: rgb(254, 211, 55);
+}
+.backbutton a{
+    font-size: larger;
+    color: #000000;
+    text-decoration: none;
+}
+
+
 @media only screen and (max-width: 768px) {
     body {
         font-size: 12px;
@@ -205,12 +239,14 @@ dl div{
         grid-row-gap: 10px;
     }
 
-    dl p{
+    dl p {
         padding: 0 0 10px 0;
     }
-    dt{
+
+    dt {
         padding: 10px 0;
     }
+
     h1 {
         padding: 10px;
     }
@@ -226,8 +262,9 @@ dl div{
         list-style: inside;
     }
 }
+
 @media (prefers-reduced-motion: reduce) {
     .aboutImg {
-      animation-duration: 0s;l
+        animation-duration: 0s;
     }
-  }
+}

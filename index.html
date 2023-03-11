@@ -9,15 +9,19 @@
   <!-- connects to the stylesheets -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/f89184f136.js" crossorigin="anonymous"></script>
-  <!-- connect to a Google font -->
-  <!-- connect to a Font Aweseom font -->
-  <!-- connect to a favicon -->
 
+  <!-- connect to a Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/f89184f136.js" crossorigin="anonymous"></script>
+  <!-- connect to a favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon1.png">
   <title>Women's Web</title>
 </head>
 
-<body>
+<body class="mainbody">
   <a href="#mainstuff" class="skip">Skip to Main Content</a>
   <header>
     <nav>
@@ -31,7 +35,7 @@
     <h1> Woman's Web </h1>
   </header>
 
-  <main class="indexMain">
+  <main id="mainstuff" class="indexMain">
     <img class="aboutImg" src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March">
     <div>
       <p>
@@ -55,7 +59,7 @@
       </p>
     </div>
     <h3>History / Politics</h3>
-    
+
     <div>
       <p>
         This page features bios of important women in history and women currently in Congress or otherwise politically
@@ -80,12 +84,15 @@
   </main>
 
   <footer>
-    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-heart"></i>
     <p class="thanks">
-      Thanks for visiting! <i></i>
+      Thanks for visiting!
     </p>
     <p>Orginal content created by Kelsey Toporski 2019</p>
-    <a href="#main">Back to Top</a>
+    <div class="backbutton">
+      <a href="#main">Back to Top</a>
+    </div>
+    
   </footer>
   </main>
 </body>
