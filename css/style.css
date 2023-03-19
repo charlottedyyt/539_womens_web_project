@@ -15,6 +15,7 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
 }
 
 .indexMain {
@@ -26,29 +27,28 @@ body {
 }
 
 nav {
-    display: flex;
     background-color: #fee5e5;
     padding: 10px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    margin-top: 10px;
 }
 
 nav ul li {
     /* Set display, margin, padding, font-size, background-color */
-    display: inline-block;
     padding: 10px 20px;
-    font-size: large;
 }
 
 nav a {
     /* Set text decoration*/
     color: #000000;
     text-decoration: none;
+    font-size: 16px;
 }
 
 a:visited {
@@ -67,12 +67,15 @@ a:hover {
     font-weight: bold;
 }
 
-h1 {
+h1  {
     /*Set font and font size*/
     font-size: 2.2rem;
     font-weight: 600;
+    padding: 10px;
 }
-
+.dicExplain{
+    margin: 0 10px;
+}
 h2,
 dt {
     /*Set font, font size, and alignment*/
@@ -98,6 +101,7 @@ h2,
 h3 {
     /*Set margin */
     margin: 0 10px;
+    font-weight: bold;
 
 }
 
@@ -106,10 +110,11 @@ h3 {
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    /* grid-template-columns: 30% 30% 30%; */
     border-radius: 20px;
     justify-content: space-between;
     grid-row-gap: 10px;
+    grid-template-columns: 100%;
 }
 
 .grid div {
@@ -144,6 +149,17 @@ h3 {
     border: solid rgb(156, 156, 241) 5px;
 }
 
+.grid p {
+    padding: 0 10px;
+}
+
+.grid ul li {
+    /* Set margin, line-spacing, list styling  */
+    margin: 10px 0px 10px 20px;
+    line-height: 1;
+    list-style: inside;
+}
+
 p+p {
     margin: 10px;
 }
@@ -174,7 +190,7 @@ footer {
 
 .aboutImg {
     display: block;
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-bottom: 10px;
     animation-name: rotate;
@@ -196,6 +212,13 @@ dl div {
     background-color: rgba(255, 255, 255, 0.575);
     padding: 20px;
 }
+dl p {
+    padding: 0 0 10px 0;
+}
+
+dt {
+    padding: 10px 0;
+}
 
 .backbutton{
     display: inline-block;
@@ -215,52 +238,46 @@ dl div {
     color: #000000;
     text-decoration: none;
 }
+.indexIntro{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2% 0;
+}
+.indexIntro h3{
+    color: #c20092;
+}
+.hidden{
+    display: none;
+}
 
-
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 12px;
+@media only screen and (min-width: 768px) {
+   
+    nav ul{ 
+        flex-direction: row;
     }
 
-    nav {
-        flex-direction: column;
-
-        padding: 10px;
+    dl{
+        grid-template-columns: 49% 49%;
     }
-
-    nav ul {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
     .grid {
-        grid-template-columns: 100%;
-        border-radius: 20px;
-        justify-content: space-between;
-        grid-row-gap: 10px;
+        grid-template-columns: 49% 49%;
     }
-
-    dl p {
-        padding: 0 0 10px 0;
+    nav{
+        padding: 20px;
     }
-
-    dt {
-        padding: 10px 0;
+    nav ul li {
+        padding: 15px 20px;
+        
     }
-
-    h1 {
-        padding: 10px;
+    nav a{
+        font-size: 20px;
     }
-
-    .grid p {
-        padding: 0 10px;
+    h1{
+        padding: 15px 5%;
     }
-
-    .grid ul li {
-        /* Set margin, line-spacing, list styling  */
-        margin: 10px 0px 10px 20px;
-        line-height: 1;
-        list-style: inside;
+    .dicExplain{
+        padding: 15px 5%;
     }
 }
 
