@@ -36,7 +36,6 @@ nav ul {
     padding: 0;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
 }
 
 nav ul li {
@@ -122,9 +121,11 @@ h3 {
 
 .grid div {
     /* Set border properties, padding, and background color */
-    border: solid #fee5e5;
+    border: solid #000000;
+    box-shadow: 5px 5px #000000;
     background-color: rgba(255, 255, 255, 0.575);
     padding: 20px;
+    margin: 10px;
 }
 
 .grid img {
@@ -187,6 +188,7 @@ footer {
     left: -1000px;
 }
 
+
 .skip:focus {
     left: 0px;
 }
@@ -212,11 +214,16 @@ dl {
 
 dl div {
     border: solid black;
+    box-shadow: 5px 5px #000000;
     background-color: rgba(255, 255, 255, 0.575);
     padding: 20px;
+    margin: 10px;
 }
 dl p {
     padding: 0 0 10px 0;
+}
+dl h3{
+    color: #c20092;
 }
 
 dt {
