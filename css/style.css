@@ -1,10 +1,10 @@
 @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+        opacity: 0;
     }
 
     100% {
-        transform: rotate(360deg);
+        opacity: 1;
     }
 }
 
@@ -300,7 +300,26 @@ dt {
 }
 
 @media only screen and (min-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
+    dl{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    .indexIntro {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .indexIntro:nth-of-type(2){
+        margin-left: 4.5%;
+        margin-right: 4.5%;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
